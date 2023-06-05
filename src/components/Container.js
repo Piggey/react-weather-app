@@ -9,10 +9,7 @@ function Container() {
         <Weather />
       </div>
       <footer>
-        <div id="copyright">
-          Made with <span style={{ color: "#e25555" }}>♥ </span>
-          <b>Sinan Sarıkaya</b>
-        </div>
+        Dawid Sośnia <b>236653</b>
       </footer>
     </main>
   );
