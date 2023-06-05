@@ -101,11 +101,12 @@ aside .aside.Light .aside-main img {
 }
 
 aside .aside .aside-header {
-  align-self: flex-start;
+  align-self: auto;
   width: 100%;
-  height: 5vh;
   display: flex;
   justify-content: center;
+  text-align: center;
+  gap: 10px;
 }
 aside .aside .aside-header select {
   width: 80%;
@@ -163,22 +164,17 @@ aside .aside .aside-main .aside-main-item div .material-symbols-rounded,
 aside .aside .aside-main .aside-main-item div ion-icon {
   font-size: 20px;
 }
-aside .aside .aside-footer {
+aside .aside .aside-footer .unity {
   align-self: flex-end;
-  width: 100%;
   height: 8vh;
   border-top: 1px solid #ECEFF4;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 20px;
-}
-aside .aside .aside-footer .unity {
-  display: flex;
   gap: 10px;
-  align-items: center;
-  align-self: center;
 }
+
 aside .aside .aside-footer ion-icon,
 aside .aside .aside-footer a {
   color: #ECEFF4;
@@ -258,7 +254,7 @@ section .section-container .grid-item .grid-item-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 footer {
