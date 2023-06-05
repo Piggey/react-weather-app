@@ -95,10 +95,10 @@ function Weather() {
               </span>
               <div className="aside-main-item">
                 <div>
-                  Feels Like
                   <span className="material-symbols-rounded">
                     device_thermostat
                   </span>
+                  Feels Like
                 </div>
                 <span>
                   {Math.round(weathers?.current?.feels_like)}
@@ -111,8 +111,8 @@ function Weather() {
               </div>
               <div className="aside-main-item">
                 <div>
-                  Day
                   <span className="material-symbols-rounded">light_mode</span>
+                  Day
                 </div>
                 <span>
                   {Math.round(weathers?.daily?.[0]?.temp?.day)}
@@ -125,8 +125,8 @@ function Weather() {
               </div>
               <div className="aside-main-item">
                 <div>
-                  Night
                   <span className="material-symbols-rounded">bedtime</span>
+                  Night
                 </div>
                 <span>
                   {Math.round(weathers?.daily?.[0]?.temp?.night)}
@@ -139,30 +139,20 @@ function Weather() {
               </div>
               <div className="aside-main-item">
                 <div>
-                  Humidity
                   <ion-icon name="water"></ion-icon>
+                  Humidity
                 </div>
                 <span>{weathers?.current?.humidity}%</span>
               </div>
               <div className="aside-main-item">
                 <div>
-                  Wind
                   <span className="material-symbols-rounded">air</span>
+                  Wind
                 </div>
                 <span>{weathers?.current?.wind_speed}</span>
               </div>
             </div>
             <div className="aside-footer">
-              <span
-                className="mode"
-                onClick={() => setTheme(theme === "Dark" ? "Light" : "Dark")}
-              >
-                {theme === "Dark" ? (
-                  <ion-icon name="sunny"></ion-icon>
-                ) : (
-                  <ion-icon name="moon"></ion-icon>
-                )}
-              </span>
               <div className="unity">
                 <div>C</div>
                 <div>
@@ -173,13 +163,6 @@ function Weather() {
                 </div>
                 <div>F</div>
               </div>
-              <a
-                href="https://github.com/sinansarikaya/react-weather-app"
-                target="_blank"
-                className={`logo-github ${theme}`}
-              >
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
             </div>
           </div>
         </div>
